@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>Контакти</title>
+        <style>
+body  {
+	margin:0;
+	padding:0;
+}
+header  {
+	background-color:green;
+	color:#FFFFFF;
+	margin:0;
+	padding:20px;
+}
+nav ul {
+	list-style:none;
+	font-size:20px;
+	text-align:center;
+	font-family: cursive;
+	padding:0;
+	margin:0;
+}
+nav ul li  {
+	display:inline;
+        padding:0 10px;
+	margin:0 10px ;
+}
+.lolik {
+color:white;
+}
+nav ul li:hover  {
+	background-color:#FF0000;
+}
+p  {
+   color:  #92000a;
+   text-align:center;
+   font-size:25px;
+   font-family: cursive;
+}
+.p2 {
+font-size:15px;
+}
+form {
+text-align:justify;
+
+}
+label {
+color:white;
+-webkit-text-stroke: 1px black;
+letter-spacing: 2px;
+}
+.input {
+margin:15px 0 0 0; 
+}
+input:hover {
+transform:scale(1.1);
+}
+.batton {
+margin:0 0 15px 0;
+color:white;
+-webkit-text-stroke: 1px black;
+letter-spacing: 2px;
+background-color:white;
+border-radius:10px;
+font-size:20px;
+}
+.facebook {
+  height:50px;
+  width:50px;
+}
+footer  {
+	background-color:#1a6600;
+	padding:10px 0;
+}
+footer p  {
+	color:white;
+	text-align:center;
+	font-size:15px;
+}
+.table {
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sunset02.jpg/330px-Sunset02.jpg");
+    margin:10px auto;
+    background-size: cover;
+}
+.kont {
+ width:1000px;
+}
+.kryt {
+display:inline-block;
+margin:0 2px;
+padding:0;
+list-style-type:none;
+color:white;
+}
+.kontakt {
+width:1000px;
+line-height:0.5;
+}
+.infokontakt {
+font-size:13px;
+text-align:justify;
+padding:0 0 0 150px;
+}
+.ul1 {
+display:inline-block;
+margin:0 2px;
+padding:0;
+list-style-type:none;
+color:white;
+line-height:0.5;
+text-align:right;
+}
+.ul2 {
+display:inline-block;
+margin:0 2px;
+padding:0;
+list-style-type:none;
+color:white;
+text-align:right;
+}
+@media screen and (max-width:600px) {
+nav ul li {
+	display:block;
+	margin:10px;
+	font-size:16px;
+} 	
+p {font-size:20px;}
+td {color:white; font-size:16px;text-align:center;}
+img { height:70px;
+    width:70px;}
+iframe {
+	height:300px;
+	width:300px;
+}
+}
+	</style>
+        </head>
+<body>
+
+<header>
+<nav>
+	<ul>
+		<li><a href="pizza.html" class="lolik">Головна</a></li>
+		<li><a href="menu.html" class="lolik">Меню</a></li>
+		<li><a href="pronas.html" class="lolik">Про нас</a></li>
+		<li><a href="kontakty.html" class="lolik">Контакти</a></li>
+	</ul>
+</nav>
+</header>
+<main>
+<p>Контакти</p>
+<table>
+<tr>
+<td><p class="p2">Адреса:77300</p><p class="p2">Івано-Франківська обл</p>
+<p class="p2">м Калуш</p><p class="p2">вул. Незалежності, 6</p></td>
+<td><form>
+<label for="name">Ім'я:</label>
+<input class="input" type="text" id="name" name="name" placeholder="Введіть своє ім'я" required><br><br>
+<label for="lastname">Прізвище:</label>
+<input type="text" id="lastname" name="lastname" placeholder="Введіть своє прізвище" required><br><br>
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" placeholder="Введіть свій email" required><br><br>
+<label for="phone">Телефон:</label>
+<input type="number" id="number" name="number" placeholder="Введіть свій номер телефону" required><br><br>
+<label for="adres">Адреса:</label>
+<input type="text" id="adres" name="adres" placeholder="Введіть вашу адресу" required><br><br>
+<label for="male">Чоловік</label>
+<input type="radio" id="male" name="male" value="male" checked required>
+<label for="female">Жінка</label>
+<input type="radio" id="female" name="male" value="female" required><br><br>
+<input class="batton" type="submit" value="Відправити">
+</form></td>
+</tr>
+</table>
+</main>
+<footer>
+<table class="table">
+	<tr>
+	<td class="kontakt">
+	<p class="infokontakt">Контакна інформація</p>
+	<p class="infokontakt">Адрес:Бульвар Незалежності,6</p>
+	<p class="infokontakt">Номер телефон:+380 95 925 0420</p>
+	<p class="infokontakt">Email:vintashplus@gmail.com</p>
+	</td>
+	<td class="kont">
+	<p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiE5fvSroyLAxXKVEEAHVohMK8QFnoECCEQAQ&url=https%3A%2F%2Fwww.facebook.com%2FVintagePlusKalush%2F&usg=AOvVaw2Zx2ne7Y_Jans4vbDJUGf-&opi=89978449"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="facebook"></a></p>
+	</td>
+	<td class="kont">
+	<h4><u class="kryt">Графік роботи:</u></h4>
+	<ul class="ul1">
+	<li>пн:8:00-20:00</p>
+	<li>вт:8:00-20:00</p>
+	<li>ср:8-00-20:00</p>
+	<li>чт:8:00-20:00</p>
+	</ul>
+	<ul class="ul2">
+	<li>пт:8:00-20:00</p>
+	<li>сб:9:00-18:00</p>
+	<li>вс:9:00-18:00</p>
+	</ul>
+	</td>
+</footer>       
+        </body>
+</html>          

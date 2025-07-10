@@ -1,0 +1,109 @@
+body {
+	background: linear-gradient(to right,#1c1c3c, #3a3a72 );
+	text-align:center;
+	font-size:15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height:650px;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+p {
+	text-shadow: 1px 1px 2px black;
+	color:#f0f0f0;
+	font-size:25px;
+	font-weight: bold;
+}
+h2{
+	text-shadow: 1px 1px 2px black;
+	color:#f0f0f0;
+	font-size:15px;
+}
+a,.button2 {
+	border-radius:10px;
+	color: #00ff99;
+  	background: #222;
+	padding:10px 20px;
+	margin:15px;
+	box-shadow:0 0 10px #00ff99;
+	text-decoration:none;
+	
+}
+.button2:hover {
+background:linear-gradient(to right,red,pink);
+  color: #000;
+  box-shadow: 0 0 20px #00ff99;
+}
+a:hover {
+background:linear-gradient(to right,red,pink);
+  color: #000;
+  box-shadow: 0 0 20px #00ff99;
+}
+
+li {
+	margin:35px;
+	list-style-type:none;
+}
+img {
+	max-width:200px;
+}
+form {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:1200px;
+
+}
+.money {
+    position: fixed;
+    top: -50px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/1000_%D0%B3%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D1%8C_2019_%D0%B0%D0%B2%D0%B5%D1%80%D1%81.jpg/1200px-1000_%D0%B3%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D1%8C_2019_%D0%B0%D0%B2%D0%B5%D1%80%D1%81.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+@keyframes fall {
+    0% {
+      transform: translateY(-50px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+.money:nth-child(1) {    left: 5vw;
+    animation-duration: 7s;    animation-delay: 0s;
+    width: 30px;    height: 30px;
+  }
+  .money:nth-child(2) {    left: 15vw;
+    animation-duration: 8s;    animation-delay: 2s;
+    width: 40px;    height: 40px;
+  }  .money:nth-child(3) {
+    left: 25vw;    animation-duration: 6s;
+    animation-delay: 4s;    width: 35px;
+    height: 35px;  }
+  .money:nth-child(4) {    left: 35vw;
+    animation-duration: 9s;    animation-delay: 1s;
+    width: 25px;    height: 25px;
+  }  .money:nth-child(5) {
+    left: 50vw;    animation-duration: 7.5s;
+    animation-delay: 3s;    width: 45px;
+    height: 45px;  }
+  .money:nth-child(6) {    left: 65vw;
+    animation-duration: 8.5s;    animation-delay: 5s;
+    width: 30px;    height: 30px;
+  }  .money:nth-child(7) {
+    left: 75vw;    animation-duration: 7s;
+    animation-delay: 6s;    width: 40px;
+    height: 40px;  }
+  .money:nth-child(8) {    left: 85vw;
+    animation-duration: 9s;    animation-delay: 0.5s;
+    width: 35px;    height: 35px;
+  }
+

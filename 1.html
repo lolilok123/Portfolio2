@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення піци</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6347;
+        }
+
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .submit-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .submit-button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Оформлення піци</h1>
+
+        <div class="form-section">
+            <h2>Виберіть розмір піци</h2>
+            <div class="form-group">
+                <label for="size">Розмір:</label>
+                <select id="size" name="size">
+                    <option value="small">Маленька (20 см)</option>
+                    <option value="medium">Середня (30 см)</option>
+                    <option value="large">Велика (40 см)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Вибір коржа</h2>
+            <div class="form-group">
+                <label for="crust">Тип коржа:</label>
+                <select id="crust" name="crust">
+                    <option value="thin">Тонкий</option>
+                    <option value="thick">Товстий</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Інгредієнти</h2>
+            <div class="form-group">
+                <label for="toppings">Оберіть інгредієнти:</label><br>
+                <input type="checkbox" id="cheese" name="topping" value="cheese">
+                <label for="cheese">Сир</label><br>
+                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                <label for="pepperoni">Пепероні</label><br>
+                <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+                <label for="mushrooms">Гриби</label><br>
+                <input type="checkbox" id="olives" name="topping" value="olives">
+                <label for="olives">Оливки</label><br>
+                <input type="checkbox" id="onions" name="topping" value="onions">
+                <label for="onions">Цибуля</label><br>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Інформація про доставку</h2>
+            <div class="form-group">
+                <label for="address">Адреса доставки:</label>
+                <input type="text" id="address" name="address" placeholder="Введіть вашу адресу" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефону:</label>
+                <input type="text" id="phone" name="phone" placeholder="Введіть ваш номер телефону" required>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="submit-button" type="submit">Оформити замовлення</button>
+        </div>
+    </div>
+
+</body>
+</html>
