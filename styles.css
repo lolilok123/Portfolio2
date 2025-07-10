@@ -113,5 +113,10 @@ font-weight: bold;
 .div222{
 	display:flex;
 	flex-direction:column;
+	padding:10px 10px 10px 10px;
+	margin:15px 15px 15px 15px;
 }
+	p {
+	font-size:10px;
+	}
 }
