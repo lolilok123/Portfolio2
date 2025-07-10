@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forma.css">
+    <title>Forma</title>
+</head>
+<body>
+<header>
+		<div class="logotip">
+	<img src="logo.png" style="height: 60px; margin:0; padding-right:10px;">
+	<p>Форма</p>
+	<a href="LOAD.html">Назад↩️</a>
+		</div>
+	</header>
+	<main>
+<p class="promene" style="text-align:center">Заповніть форму</p>
+<form action="https://formspree.io/f/mpwrzrpk" method="POST" >
+	<input type="email" name="email" placeholder="📧 Введіть ваш email" required />
+	<input type="tel" name="tel" placeholder="📱 Введіть ваш номер телефону" required />
+	<input type="text" name="name" placeholder="👤 Введіть ваше ім'я" required />
+	<input type="text" name="city" placeholder="🏙️ Ваше місто" />
+	<input type="date" name="birthdate" placeholder="📅 Дата народження" />
+	<input type="text" name="instagram" placeholder="📸 Ваш Instagram (необов’язково)" />
+	<input type="text" name="text" placeholder="🗨️ Дайте свій коментар" required />
+	
+	<select name="gender" required>
+		<option value="" disabled selected>⚧️ Оберіть вашу стать</option>
+		<option value="male">Чоловік</option>
+		<option value="female">Жінка</option>
+		<option value="other">Інше</option>
+	</select>
+
+	<label>
+		<input type="checkbox" name="agree" required />
+		✅ Я погоджуюсь з умовами участі
+	</label>
+
+	<button class="button2" type="submit">🔗 Відправити запит на виграш</button>
+</form>
+
+	</main>
+<footer>
+<p>@Моє Портфоліо 2025✅</p>
+</footer>
+</body>
+</html>
