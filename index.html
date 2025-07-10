@@ -22,6 +22,7 @@
 	<p class="promene" id="pro"><u> Про мене </u></p>
 	<p class="starbucks"> Я початковий розробник сайтів </p> <p class="starbucks"> учусь з своєю вчителькою</p>
 <p class="promene" id="works"><u>Мої роботи</u></p>
+			<div class="scrollable" id="myDiv">
 		<div class="allproject">
 	<div class="project">
 <a href="pizza.html"><img src="2project.png"></a>
@@ -62,6 +63,15 @@
 <p></p>
 	</div>
 		</div>
+			</div>
+	<script>
+  const div = document.getElementById('myDiv');
+  div.style.maxHeight = '400px';      // обмеження по висоті
+  div.style.overflowY = 'auto';       // скрол з'являється лише при потребі
+  div.style.padding = '10px';         // трохи внутрішнього відступу
+  div.style.boxSizing = 'border-box'; // щоб padding не ламав розміри
+  div.style.border = '1px solid #ccc'; // необов'язково: додає рамку
+</script>
 <p class="promene" style="text-align:center; padding:0; margin:0 55px 5px 0;" id="konty"><u><a href="form.html">Контакти : запропонуйте свою ідею</a></u></p>
 </main>
 <footer>
