@@ -162,6 +162,7 @@ margin: 15px 0 0 950px;
 @media (max-width: 600px) {
   form {
     margin: 10px;
+    max-width:100px;
   }
 input, select, textarea {
   width: 90%;
