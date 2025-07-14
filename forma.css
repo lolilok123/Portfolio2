@@ -159,3 +159,8 @@ font-weight: bold;
 .logotip a {
 margin: 15px 0 0 950px;
 }
+@media(max-width:600px) {
+form{
+	margin:10px 10px 10px 10px;
+	
+}
