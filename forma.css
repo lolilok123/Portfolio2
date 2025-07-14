@@ -163,4 +163,14 @@ margin: 15px 0 0 950px;
   form {
     margin: 10px;
   }
+input, select, textarea {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+			}
 }
