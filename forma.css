@@ -161,10 +161,12 @@ margin: 15px 0 0 950px;
 }
 @media (max-width: 600px) {
   form {
-    margin: 10px;
-    max-width: 100px;
+    margin: 10px auto;
+    width: 100px ;
   }
-
+  .logotip a {
+	  margin-left:auto;
+  }
   input,
   select,
   textarea {
@@ -180,6 +182,9 @@ margin: 15px 0 0 950px;
 
   .logotip {
     display: flex;
-    justify-content: left;
+    align-items:center;
+    flex-direction:row;
+    width:100%;
+    margin:10px;
   }
 }
