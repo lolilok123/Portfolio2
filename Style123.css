@@ -68,7 +68,7 @@ transform:scale(1.05);
 footer { 
 position:absolute;
 background-color:black;
-width:1221px;
+width:1300px;
 height:150px;
 }
 .Footer {
@@ -217,4 +217,5 @@ top:10px;
 left:200px;
 }
 }
+
 
