@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Оплата консультації психолога</title>
+<style>
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #fff7f0; /* м’який світлий фон */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+  }
+
+  .card { 
+    background: #ffffff; 
+    padding: 40px 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 15px 35px rgba(255,140,0,0.2), 0 5px 15px rgba(255,140,0,0.1);
+    max-width: 400px; 
+    width: 100%; 
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 { 
+    text-align: center; 
+    margin-bottom: 25px; 
+    color: #ff6f00; /* насичений оранжевий заголовок */
+  }
+
+  input { 
+    width: 100%; 
+    padding: 12px; 
+    margin: 12px 0; 
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+    font-size: 16px; 
+    transition: border 0.3s;
+  }
+
+  input:focus {
+    border-color: #ff8c00;
+    outline: none;
+  }
+
+  button { 
+    width: 100%; 
+    padding: 14px; 
+    background: linear-gradient(90deg, #ff8c00, #ffa726);
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bold;
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    background: linear-gradient(90deg, #ffa726, #ff8c00);
+    transform: translateY(-2px);
+  }
+
+  #payment-message { 
+    margin-top: 15px; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Оплата консультації</h2>
+  <form id="payment-form">
+    <input type="text" id="name" placeholder="Ваше ім’я" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="phone" placeholder="Телефон (необов'язково)">
+    <input type="number" id="amount" placeholder="Сума консультації (грн)" required min="100" max="1000">
+    <button type="submit">Оплатити</button>
+  </form>
+  <div id="payment-message"></div>
+</div>
+
+<script>
+  const form = document.getElementById("payment-form");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const amount = parseInt(document.getElementById("amount").value);
+    if (amount < 100 || amount > 1000) {
+      document.getElementById("payment-message").textContent = "Сума повинна бути від 100 до 1000 грн";
+      document.getElementById("payment-message").style.color = "red";
+      return;
+    }
+
+    // Симуляція успішної оплати
+    document.getElementById("payment-message").textContent = "Оплата пройшла успішно! Дякуємо за запис на консультацію.";
+    document.getElementById("payment-message").style.color = "#ff6f00";
+  });
+</script>
+
+</body>
+</html>
